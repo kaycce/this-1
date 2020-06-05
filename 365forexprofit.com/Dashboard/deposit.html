@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><style>.jquery-ripples { position: relative; z-index: 0; }</style><meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EPFXTRADING | Deposit</title>
+    <!--Favicon add-->
+    <link rel="shortcut icon" type="image/png" href="../images/fav.png">
+    <!--bootstrap Css-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!--font-awesome Css-->
+    <link href="../font2/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- Lightcase  Css-->
+    <link href="../css/lightcase.css" rel="stylesheet">
+    <!--WOW Css-->
+    <link href="../css/animate.min.css" rel="stylesheet">
+    <!--Slick Slider Css-->
+    <link href="../css/slick.css" rel="stylesheet">
+    <!--Slick Nav Css-->
+    <link href="../css/slicknav.min.css" rel="stylesheet">
+    <!--Swiper  Css-->
+    <link href="../css/swiper.min.css" rel="stylesheet">
+    <!--Style Css-->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- Theam Color Css-->
+    <link href="../css/colorf690.css?color=EEA640" rel="stylesheet">
+    <!--Responsive Css-->
+    <link href="../css/responsive.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="../css/ranger-style.css">
+    <link rel="stylesheet" href="../css/ion.rangeSlider.skinFlat.css">
+    <style>
+        .price-table {
+            margin-bottom: 45px;
+        }
+    </style>
+    <script src="../js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../css/style2.css">
+
+    <script src="../js/modernizr.js"></script>
+</head>
+
+<body data-spy="scroll"><div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+                   <!-- <li><a href="../index.html">Home</a></li>-->
+                    <li><a href="dashboard.html" role="menuitem" tabindex="-1">Dashboard</a></li>
+                                            <li><a href="deposit.html" role="menuitem" tabindex="-1">Deposit</a></li>
+                                        <li><a href="withdraw.html" role="menuitem" tabindex="-1">Withdraw</a></li>
+                    <li><a href="history.html" role="menuitem" tabindex="-1">Trading History</a></li>
+                                            <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row"><a class="page-scroll" href="#" tabindex="-1">Account <i class="fa fa-angle-down"></i></a>
+                            <span class="slicknav_arrow">►</span></a><ul class="mega-menu mega-menu1 mega-menu2 menu-postion-4 slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                                <li class="mega-list mega-list1">
+                             
+                                    <a class="page-scroll" href="logout.html" role="menuitem" tabindex="-1">Logout</a>
+                                   
+                            </li></ul>
+                        </li>
+                                    </ul></div>
+<!-- Start Pre-Loader-->
+
+
+<!-- End Preload -->
+<div class="animation-element">
+<!-- End Pre-Loader -->
+<!--support bar  top start-->
+<nav class="main-menu wow slideInRight" data-wow-duration="2s">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="logo">
+                    <a href="index.html"><img src="../images/logo2.png" style="max-height:60px;"></a>
+                </div>
+            </div>
+            <div class="col-md-9 text-right">
+                <ul id="header-menu" class="header-navigation">
+                   <!-- <li><a href="../index.html">Home</a></li>-->
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                                            <li><a href="deposit.html">Deposit</a></li>
+                                        <li><a href="withdraw.html">Withdraw</a></li>
+                    <li><a href="history.html">Trading History</a></li>
+                                            <li><a class="page-scroll" href="#">Account <i class="fa fa-angle-down"></i></a>
+                            <ul class="mega-menu mega-menu1 mega-menu2 menu-postion-4">
+                                <li class="mega-list mega-list1">
+                             
+                                    <a class="page-scroll" href="logout.html">Logout</a>
+                                   
+                            </li></ul>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="support-bar-top wow slideInLeft" data-wow-duration="2s" id="raindrops-green" style="overflow: hidden; position: relative;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <!----<a href="#"> <i class="fa fa-dashboard fa-1x" aria-hidden="true"></i><strong> </strong> </a>--->
+                </div>
+            </div>
+            <div class="col-md-6 text-right bounceIn">
+                <div class="contact-admin">
+                 <a href="#"> <i class="fa fa-user" aria-hidden="true"></i></a>
+                     <!--  <a href="#"> <i class="fa fa-money" aria-hidden="true"></i> </a>
+                    <div class="support-bar-social-links">
+                                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                    <a href="../3.html"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                            </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+<canvas height="5" width="577" style="position: absolute; bottom: 0px; left: 0px;"></canvas></div>
+</div>
+<!---------    navber ----------------->
+<br>
+  
+     <div class="container">
+ 	
+       
+         
+
+        <div class="alert alert-success alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+  <!--Bitcoin address: <strong>1GiJE4TQrfCs7NX4JmBBLizw48Vt2Cefwq</strong>-->
+  Email us at <strong>deposit@EPFXTRADING.com </strong>for payment.
+</div>
+                
+          
+    
+		
+		
+		
+		 
+        </div>
+              
+    
+    
+                  
+    	    
+    
+ 
+    
+  
+  
+ <br> 
+ 
+ 
+ 
+ 
+ 
+ <div class="container">
+    <div class="panel panel-default">
+  <div class="panel-heading"><strong style="color:#FFF;">Account Statistics</strong></div>
+  
+  
+  <div class="panel-body">
+    <div class="row">
+    
+        <div class="col-lg-3">
+        <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-money fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+  <div class="huge dashboard-balance-text"> $ <span data-counter="counterup">0.00</span></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">Current Balance</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+       </div>
+       
+       <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-recycle fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge dashboard-balance-text">
+                                          <span data-counter="counterup" data-value="0">
+                                           0   
+
+                                          </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">Pending Withdrawals</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+       
+       <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-cloud-download fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge dashboard-balance-text">  $   <span data-counter="counterup" data-value="0">
+                                        0.00                                    </span></div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">Total Deposits</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+       
+       <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-cloud-upload fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge dashboard-balance-text">
+                                          $ <span data-counter="counterup" data-value="10135">
+                                              0.00                                          </span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">Total Withdraws</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+       
+       
+    </div>  
+  </div>
+</div>
+    
+    
+    <div style="height:510px;">
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+
+new TradingView.widget({
+   "autosize": true,
+  "symbol": "FX:USDJPY",
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "Dark",
+  "style": "10",
+  "locale": "en",
+  "toolbar_bg": "#4f4f4f",
+  "enable_publishing": false,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "details": true,
+  "hotlist": true,
+  "calendar": true,
+  "news": [
+    "stocktwits",
+    "headlines"
+  ],
+  "hideideas": true
+});
+</script><div id="tradingview_132a2-wrapper" style="position: relative;box-sizing: content-box;width: 100%;height: 100%;margin: 0 auto !important;padding: 0 !important;font-family:Arial,sans-serif;"><div style="width: 100%;height: 100%;background: transparent;padding: 0 !important;"><iframe id="tradingview_132a2" src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_132a2&amp;symbol=FX%3AUSDJPY&amp;interval=1&amp;hidesidetoolbar=0&amp;symboledit=1&amp;saveimage=1&amp;toolbarbg=4f4f4f&amp;details=1&amp;calendar=1&amp;hotlist=1&amp;studies=%5B%5D&amp;hideideas=1&amp;theme=Dark&amp;style=10&amp;timezone=Etc%2FUTC&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en&amp;utm_source=EPFXTRADING.com&amp;utm_medium=widget&amp;utm_campaign=chart&amp;utm_term=FX%3AUSDJPY" style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen=""></iframe></div></div>
+    </div>
+    
+   </div><style>.tradingview-widget-copyright {font-size: 13px !important; line-height: 32px !important; text-align: center !important; vertical-align: middle !important; font-family: 'Trebuchet MS', Arial, sans-serif !important; color: #9db2bd !important;} .tradingview-widget-copyright .blue-text {color: #2196f3 !important;} .tradingview-widget-copyright a {text-decoration: none !important; color: #9db2bd !important;} .tradingview-widget-copyright a:visited {color: #9db2bd !important;} .tradingview-widget-copyright a:hover .blue-text {color: #38acdb !important;} .tradingview-widget-copyright a:active .blue-text {color: #299dcd !important;} .tradingview-widget-copyright a:visited .blue-text {color: #2196f3 !important;}</style> 
+    
+  <style type="text/css">
+    li.export-main {
+        visibility: hidden;
+    }
+</style>
+<!--jquery script load-->
+<script src="../js/jquery.js"></script>
+
+<script src="../js/bootstrap.min.js"></script>
+<!-- Gmap Load Here -->
+<script src="../js/gmaps.js"></script>
+<!-- Map Js File Load -->
+<script src="../js/map-scriptf690.js"></script>
+<!-- Highlight script load-->
+<script src="../js/highlight.min.js"></script>
+<!--Jquery Ui Slider script load-->
+<script src="../js/jquery-ui-slider.min.js"></script>
+<!--Circleful Js File Load-->
+<script src="js/jquery.circliful.js"></script>
+<!--CounterUp script load-->
+<script src="../js/jquery.counterup.min.js"></script>
+<!-- Ripples  script load-->
+<script src="../js/jquery.ripples-min.js"></script>
+<!--Slick Nav Js File Load-->
+<script src="../js/jquery.slicknav.min.js"></script>
+<!--Lightcase Js File Load-->
+<script src="../js/lightcase.js"></script>
+<!--particle Js File Load-->
+<script src="../js/particles.min.js"></script>
+<!--particle custom Js File Load-->
+<script src="../js/particles-custom.js"></script>
+<!--RainDrops script load-->
+<script src="../js/raindrops.js"></script>
+<!--Easing script load-->
+<script src="../js/easing-min.js"></script>
+<!--Slick Slider Js File Load-->
+<script src="../js/slick.min.js"></script>
+<!--Swiper script load-->
+<script src="../js/swiper.min.js"></script>
+<!--WOW script load-->
+<script src="../js/wow.min.js"></script>
+<!--WayPoints script load-->
+<script src="../js/waypoints.min.js"></script>
+<script type="text/javascript" src="../js/ion.rangeSlider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            var wow = new WOW({
+                boxClass: 'wow',
+                animateClass: 'animated',
+                offset: 0,
+                mobile: true,
+                live: true
+            });
+            wow.init();
+        });
+    </script>
+    <script>
+        $.each($('.slider-input'), function() {
+            var $t = $(this),
+
+                    from = $t.data('from'),
+                    to = $t.data('to'),
+
+                    $dailyProfit = $($t.data('dailyprofit')),
+                    $totalProfit = $($t.data('totalprofit')),
+
+                    $val = $($t.data('valuetag')),
+
+                    perDay = $t.data('perday'),
+                    perYear = $t.data('peryear');
+
+
+            $t.ionRangeSlider({
+                input_values_separator: ";",
+                prefix: '$ ',
+                hide_min_max: true,
+                force_edges: true,
+                onChange: function(val) {
+                    $val.val( '$ ' + val.from);
+
+                    var profit = (val.from * perDay / 100).toFixed(1);
+                    profit  = '$ ' + profit.replace('.', '.') ;
+                    $dailyProfit.text(profit) ;
+
+                    profit = ( (val.from * perDay / 100)* perYear ).toFixed(1);
+                    profit  =  '$ ' + profit.replace('.', '.');
+                    $totalProfit.text(profit);
+
+                }
+            });
+        });
+        $('.invest-type__profit--val').on('change', function(e) {
+
+            var slider = $($(this).data('slider')).data("ionRangeSlider");
+
+            slider.update({
+                from: $(this).val().replace('$')
+            });
+        })
+    </script>
+<!--Main js file load-->
+<script src="../js/main.js"></script>
+<script src="../js/main2.js"></script>
+<!-- <script src="https://365EPFXTRADING.com/assets/js/main.js"></script> -->
+<!--swal alert message-->
+
+<!--end swal alert message-->
+<script>
+var mobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+
+hljs.initHighlightingOnLoad();
+hljs.configure({useBR: true});
+jQuery('#raindrops').raindrops({color:'#fff',canvasHeight:5});
+jQuery('#raindrops-green').raindrops({color:'#EEA640 ',canvasHeight:5});
+</script>
+
+
+</body></html>
